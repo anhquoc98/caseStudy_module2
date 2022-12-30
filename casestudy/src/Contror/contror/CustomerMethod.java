@@ -1,11 +1,22 @@
 package Contror.contror;
 
 import Model.Ser.CustomerSer.CustomerSer;
-import Customer;
 
+import Model.model.Person.Customer;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CustomerMethod {
+
+
+
+
     public void customerMethod(){
         Scanner scanner=new Scanner(System.in);
         CustomerSer customerSer= new CustomerSer();
@@ -42,7 +53,7 @@ public class CustomerMethod {
                     String address = scanner.nextLine();
                     Customer customer =new Customer(nameEmployee,gender,dateOfBrith,numberCMNN,numberPhone,email,id,meber,address);
                     customerSer.add(customer);
-
+break;
 
                 case 3:
                     System.out.print("Hãy nhập id của nhân viên muốn điều chỉnh: ");
@@ -105,7 +116,7 @@ public class CustomerMethod {
                                     break;
 
                             }
-                        } while (choiceEditEmployee < 10);
+                        } while (choiceEditEmployee <8 );
                     } else {
                         System.out.println("Hãy nhập đúng id");
                     }

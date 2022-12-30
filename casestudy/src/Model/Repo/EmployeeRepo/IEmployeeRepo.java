@@ -2,7 +2,7 @@ package Model.Repo.EmployeeRepo;
 
 
 import Model.Repo.IRepo;
-import Model.model.Employee;
+import Model.model.Person.Employee;
 
 public interface IEmployeeRepo extends IRepo {
 

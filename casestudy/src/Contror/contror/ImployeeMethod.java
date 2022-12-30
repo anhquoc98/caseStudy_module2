@@ -1,7 +1,7 @@
 package Contror.contror;
 
 import Model.Ser.EmployeeSer.EmployeeSer;
-import Model.model.Employee;
+import Model.model.Person.Employee;
 
 
 import java.util.Scanner;

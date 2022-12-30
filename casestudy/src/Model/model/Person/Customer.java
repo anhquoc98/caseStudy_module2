@@ -1,9 +1,9 @@
 package Model.model.Person;
 
 public class Customer extends Person {
-    int idCustomer;
-    String meber;
-    String address;
+    private int idCustomer;
+    private String meber;
+    private String address;
 
     public Customer() {
     }
@@ -43,14 +43,14 @@ public class Customer extends Person {
     public String toString() {
         return "Customer{" +
                 "idCustomer=" + idCustomer +
+                super.toString() +
                 ", meber='" + meber + '\'' +
                 ", address='" + address + '\'' +
-                ", namePerson='" + namePerson + '\'' +
-                ", gender='" + gender + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", numberCMND='" + numberCMND + '\'' +
-                ", numberPhone='" + numberPhone + '\'' +
-                ", email='" + email + '\'' +
                 '}';
+    }
+
+    public String coverToCSV() {
+        String comma = ",";
+        return super.coverToCSV() + comma + this.idCustomer + comma + this.meber + comma + this.address;
     }
 }

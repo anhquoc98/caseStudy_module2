@@ -1,12 +1,22 @@
 package Model.model.Facility;
 
 public class Facility {
+    public String id;
     public String nameFacility;
     public String areaFacility;
-    public int quantityPeople;
+    public String quantityPeople;
     public String rentalType;
 
-    public Facility(String nameFacility, String areaFacility, int quantityPeople, String rentalType) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Facility(String id, String nameFacility, String areaFacility, String quantityPeople, String rentalType) {
+        this.id = id;
         this.nameFacility = nameFacility;
         this.areaFacility = areaFacility;
         this.quantityPeople = quantityPeople;
@@ -32,11 +42,11 @@ public class Facility {
         this.areaFacility = areaFacility;
     }
 
-    public int getQuantityPeople() {
+    public String getQuantityPeople() {
         return quantityPeople;
     }
 
-    public void setQuantityPeople(int quantityPeople) {
+    public void setQuantityPeople(String quantityPeople) {
         this.quantityPeople = quantityPeople;
     }
 
@@ -51,7 +61,8 @@ public class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "nameFacility='" + nameFacility + '\'' +
+                "id=" + id +
+                ", nameFacility='" + nameFacility + '\'' +
                 ", areaFacility='" + areaFacility + '\'' +
                 ", quantityPeople=" + quantityPeople +
                 ", rentalType='" + rentalType + '\'' +

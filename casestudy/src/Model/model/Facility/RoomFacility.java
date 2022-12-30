@@ -3,11 +3,11 @@ package Model.model.Facility;
 public class RoomFacility extends Facility{
     public String freeService;
 
-    public RoomFacility() {
+    public RoomFacility(String serviceName, String usableArea, String rentalCost, String maxiumNumbOfPeople, String rentalType, String serviceCode, String freeServiceIncluded) {
     }
 
-    public RoomFacility(String nameFacility, String areaFacility, int quantityPeople, String rentalType, String freeService) {
-        super(nameFacility, areaFacility, quantityPeople, rentalType);
+    public RoomFacility(String id, String nameFacility, String areaFacility, String quantityPeople, String rentalType, String freeService) {
+        super(id, nameFacility, areaFacility, quantityPeople, rentalType);
         this.freeService = freeService;
     }
 

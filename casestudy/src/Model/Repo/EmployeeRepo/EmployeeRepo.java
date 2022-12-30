@@ -1,7 +1,7 @@
 package Model.Repo.EmployeeRepo;
 
 
-import Model.model.Employee;
+import Model.model.Person.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

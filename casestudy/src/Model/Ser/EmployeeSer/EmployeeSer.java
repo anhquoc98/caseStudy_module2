@@ -2,7 +2,7 @@ package Model.Ser.EmployeeSer;
 
 
 import Model.Repo.EmployeeRepo.EmployeeRepo;
-import Model.model.Employee;
+import Model.model.Person.Employee;
 
 public class EmployeeSer implements IEmployeeSer {
     EmployeeRepo employeeRepo = new EmployeeRepo();

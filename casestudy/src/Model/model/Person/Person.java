@@ -1,12 +1,12 @@
 package Model.model.Person;
 
-public class Person {
-    String namePerson;
-    String gender;
-    String dateOfBirth;
-    String numberCMND;
-    String numberPhone;
-    String email;
+public abstract class Person {
+    private String namePerson;
+    private String gender;
+    private String dateOfBirth;
+    private String numberCMND;
+    private String numberPhone;
+    private String email;
 
     public Person() {
     }
@@ -78,5 +78,9 @@ public class Person {
                 ", numberPhone='" + numberPhone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+    public String coverToCSV(){
+        String comma= ",";
+        return this.namePerson+comma+this.gender+comma+this.dateOfBirth+comma+this.numberCMND+comma+this.numberCMND+comma+this.email;
     }
 }
