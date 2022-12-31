@@ -50,7 +50,7 @@ public class Customer extends Person {
     }
 
     public String coverToCSV() {
-        String comma = ",";
-        return super.coverToCSV() + comma + this.idCustomer + comma + this.meber + comma + this.address;
+        final String COMMA = ",";
+        return super.coverToCSV() + COMMA + this.idCustomer + COMMA + this.meber + COMMA + this.address;
     }
 }

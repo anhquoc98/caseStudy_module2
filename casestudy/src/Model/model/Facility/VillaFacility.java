@@ -1,12 +1,22 @@
 package Model.model.Facility;
 
 public class VillaFacility extends Facility {
+    public String moneyVilla;
     public String levelVillaFacility;
     public String areaPoolVilla;
     public String numberFloors;
 
-    public VillaFacility(String id, String nameFacility, String areaFacility, String quantityPeople, String rentalType, String levelVillaFacility, String areaPoolVilla, String numberFloors, String numbOfFloor) {
+    public VillaFacility(String id, String nameFacility, String areaFacility, String quantityPeople, String rentalType,
+                         String moneyVilla, String levelVillaFacility, String areaPoolVilla, String numberFloors) {
         super(id, nameFacility, areaFacility, quantityPeople, rentalType);
+        this.moneyVilla = moneyVilla;
+        this.levelVillaFacility = levelVillaFacility;
+        this.areaPoolVilla = areaPoolVilla;
+        this.numberFloors = numberFloors;
+    }
+
+    public VillaFacility(String moneyVilla, String levelVillaFacility, String areaPoolVilla, String numberFloors) {
+        this.moneyVilla = moneyVilla;
         this.levelVillaFacility = levelVillaFacility;
         this.areaPoolVilla = areaPoolVilla;
         this.numberFloors = numberFloors;
@@ -54,5 +64,9 @@ public class VillaFacility extends Facility {
                 ", quantityPeople=" + quantityPeople +
                 ", rentalType='" + rentalType + '\'' +
                 '}';
+    }
+    public String coverToCSV(){
+        final String COMMA=",";
+        return super.coverToCSV()+COMMA+this.moneyVilla+COMMA+this.levelVillaFacility+COMMA+this.areaPoolVilla+COMMA+this.numberFloors;
     }
 }

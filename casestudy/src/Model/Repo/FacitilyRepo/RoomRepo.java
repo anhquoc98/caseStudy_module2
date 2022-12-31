@@ -1,5 +1,7 @@
 package Model.Repo.FacitilyRepo;
 
+import File_csv.IORoomFacility;
+import File_csv.IOVillaFacility;
 import Model.model.Facility.RoomFacility;
 import Model.model.Facility.VillaFacility;
 
@@ -29,12 +31,13 @@ public class RoomRepo implements IRoomFacitilyRepo {
         int number = Integer.parseInt(scanner.nextLine());
         switch (number) {
             case 1:
-
                 System.out.println(roomFacilityIntegerMap.entrySet());
+                roomFacilityIntegerMap=IORoomFacility.readRoomFacility();
                 break;
             case 2:
 
                 System.out.println(villaFacilityIntegerMap.entrySet());
+                villaFacilityIntegerMap= IOVillaFacility.readRoomFacility();
                 break;
         }
     }
@@ -47,12 +50,13 @@ public class RoomRepo implements IRoomFacitilyRepo {
         int number = Integer.parseInt(scanner.nextLine());
         switch (number) {
             case 1:
-
                 roomFacilityIntegerMap.put((RoomFacility) object, 1);
+                IORoomFacility.writerRoomFacility(roomFacilityIntegerMap);
                 break;
 
             case 2:
                 villaFacilityIntegerMap.put((VillaFacility) object, 1);
+                IOVillaFacility.writerVillaFacility(villaFacilityIntegerMap);
                 break;
         }
 

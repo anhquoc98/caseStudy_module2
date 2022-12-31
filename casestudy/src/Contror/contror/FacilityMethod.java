@@ -125,8 +125,7 @@ public class FacilityMethod {
                                 } while (!serviceCode.matches(regexCode.getROOM_CODE_REGEX()));
                                 System.out.println("Nhập dịch vụ cung cấp miễn phí");
                                 String freeServiceIncluded = scanner.nextLine();
-                                RoomFacility room = new RoomFacility(serviceName, usableArea,
-                                        rentalCost, maxiumNumbOfPeople, rentalType,
+                                RoomFacility room = new RoomFacility(serviceName, usableArea, maxiumNumbOfPeople, rentalType,
                                         serviceCode, freeServiceIncluded);
                                 facilitySer.add(room);
                                 break;
@@ -265,9 +264,8 @@ public class FacilityMethod {
                                         System.out.println("Nhập chưa đúng format vui lòng nhập lại.");
                                     }
                                 } while (!numbOfFloor.matches(regexCode.getFLOOR_NUMBER_REGEX()));
-                                VillaFacility villa = new VillaFacility(serviceNameVilla, usableAreaVilla,
-                                        rentalCostVilla, maxiumNumbOfPeopleVilla, rentalTypeVilla,
-                                        serviceCodeVilla, roomStandard, poolArea, numbOfFloor);
+                                VillaFacility villa = new VillaFacility(serviceNameVilla,usableAreaVilla,rentalCostVilla,maxiumNumbOfPeopleVilla,rentalTypeVilla,serviceCodeVilla,roomStandard,
+                                        poolArea,numbOfFloor);
                                 facilitySer.add(villa);
                                 break;
                         }

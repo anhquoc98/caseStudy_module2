@@ -54,12 +54,16 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Employee.csv{" +
                 "idEmployee=" + idEmployee +
                 super.toString()+
                 ", levelEmloyee='" + levelEmloyee + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+    public String coverToCSV() {
+        String comma = ",";
+        return super.coverToCSV() + comma + this.idEmployee + comma + this.levelEmloyee + comma + this.position+comma+this.salary;
     }
 }

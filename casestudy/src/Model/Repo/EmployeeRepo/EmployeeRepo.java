@@ -1,6 +1,7 @@
 package Model.Repo.EmployeeRepo;
 
 
+import File_csv.IOEmployee;
 import Model.model.Person.Employee;
 
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class EmployeeRepo implements IEmployeeRepo {
         for (Employee c : employeeList) {
             System.out.println(c);
         }
+        employeeList =IOEmployee.readEmloyee();
     }
 
 
@@ -59,5 +61,6 @@ public class EmployeeRepo implements IEmployeeRepo {
     @Override
     public void add(Object object) {
         employeeList.add((Employee) object);
+        IOEmployee.writeEmployee(employeeList);
     }
 }

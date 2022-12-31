@@ -7,6 +7,7 @@ public class Facility {
     public String quantityPeople;
     public String rentalType;
 
+
     public String getId() {
         return id;
     }
@@ -67,5 +68,10 @@ public class Facility {
                 ", quantityPeople=" + quantityPeople +
                 ", rentalType='" + rentalType + '\'' +
                 '}';
+    }
+
+    public String coverToCSV() {
+        final String COMMA = ",";
+        return this.nameFacility + COMMA + this.areaFacility + COMMA + this.quantityPeople + COMMA + this.rentalType + COMMA + this.id;
     }
 }

@@ -1,27 +1,26 @@
 package File_csv;
 
 
-
-import Model.model.Person.Customer;
+import Model.model.Person.Employee;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+public class IOEmployee {
 
-public class IOCustomer {
-    public static final String FILE_CUSTOMER = "D:\\Codegyme\\module\\casestudy\\src\\File_csv\\Custom.csv";
+    public static final String FILE_EMLOYEE = "D:\\Codegyme\\module\\casestudy\\src\\File_csv\\Employee.csv";
 
-    public static List<Customer> readCustomer() {
-        List<Customer> customerList = new ArrayList<>();
+    public static List<Employee> readEmloyee() {
+        List<Employee> customerList = new ArrayList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
-            fileReader = new FileReader(FILE_CUSTOMER);
+            fileReader = new FileReader(FILE_EMLOYEE);
             bufferedReader = new BufferedReader(fileReader);
             String line;
             String[] temp;
-            Customer customer;
+            Employee employee;
             while ((line = bufferedReader.readLine()) != null) {
                 temp = line.split(",");
                 String nameEmployee = temp[0];
@@ -31,10 +30,11 @@ public class IOCustomer {
                 String numberPhone = temp[4];
                 String email = temp[5];
                 int id = Integer.parseInt(temp[6]);
-                String meber = temp[7];
-                String address = temp[8];
-                customer = new Customer(nameEmployee, gender, dateOfBrith, numberCMNN, numberPhone, email, id, meber, address);
-                customerList.add(customer);
+                String leverEmloyee = temp[7];
+                String positition = temp[8];
+                int salary = Integer.parseInt(temp[9]);
+                employee = new Employee(nameEmployee, gender, dateOfBrith, numberCMNN, numberPhone, email, id, leverEmloyee,positition,salary);
+                customerList.add(employee);
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -50,14 +50,14 @@ public class IOCustomer {
         return customerList;
     }
 
-    public static void writeCustomer(List<Customer> customer){
+    public static void writeEmployee(List<Employee> employees){
         FileWriter fileWriter =null;
         BufferedWriter bufferedWriter =null;
         try {
-             fileWriter =new FileWriter(FILE_CUSTOMER);
-             bufferedWriter =new BufferedWriter(fileWriter);
-            for (Customer customer1:customer){
-                bufferedWriter.write(customer1.coverToCSV());
+            fileWriter =new FileWriter(FILE_EMLOYEE);
+            bufferedWriter =new BufferedWriter(fileWriter);
+            for (Employee employee1:employees){
+                bufferedWriter.write(employee1.coverToCSV());
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
             }
