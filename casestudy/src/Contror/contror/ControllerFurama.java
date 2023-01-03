@@ -6,7 +6,6 @@ public class ControllerFurama {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int select = 0;
-        int menu;
         do {
             System.out.println("1.\tEmployee.csv Management");
             System.out.println("2.\tCustomer Management");
@@ -14,6 +13,12 @@ public class ControllerFurama {
             System.out.println("4.\tBooking Management ");
             System.out.println("5.\tPromotion Management ");
             System.out.println("6.\tExit ");
+            try{
+                select = Integer.parseInt(scanner.nextLine());
+            }catch(NumberFormatException e){
+                 e.printStackTrace();
+            }
+
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:

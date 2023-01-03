@@ -14,13 +14,18 @@ public class CustomerMethod {
     public void customerMethod(){
         Scanner scanner=new Scanner(System.in);
         CustomerSer customerSer= new CustomerSer();
-        int menu;
+        int menu=0;
         do {
             System.out.println("1\tDisplay list customers");
             System.out.println("2\tAdd new customers");
             System.out.println("3\tEdit customers");
             System.out.println("4\tReturn main menu");
-            menu = Integer.parseInt(scanner.nextLine());
+            try{
+                menu = Integer.parseInt(scanner.nextLine());
+            }catch (NumberFormatException n){
+                n.printStackTrace();
+            }
+
             switch (menu) {
 
                 case 1:

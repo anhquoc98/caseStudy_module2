@@ -1,10 +1,10 @@
 package Model.model.Facility;
 
 public class VillaFacility extends Facility {
-    public String moneyVilla;
-    public String levelVillaFacility;
-    public String areaPoolVilla;
-    public String numberFloors;
+    private String moneyVilla;
+    private String levelVillaFacility;
+    private String areaPoolVilla;
+    private String numberFloors;
 
     public VillaFacility(String id, String nameFacility, String areaFacility, String quantityPeople, String rentalType,
                          String moneyVilla, String levelVillaFacility, String areaPoolVilla, String numberFloors) {
@@ -58,12 +58,7 @@ public class VillaFacility extends Facility {
                 "levelVillaFacility='" + levelVillaFacility + '\'' +
                 ", areaPoolVilla='" + areaPoolVilla + '\'' +
                 ", numberFloors='" + numberFloors + '\'' +
-                ", id=" + id +
-                ", nameFacility='" + nameFacility + '\'' +
-                ", areaFacility='" + areaFacility + '\'' +
-                ", quantityPeople=" + quantityPeople +
-                ", rentalType='" + rentalType + '\'' +
-                '}';
+                super.toString();
     }
     public String coverToCSV(){
         final String COMMA=",";

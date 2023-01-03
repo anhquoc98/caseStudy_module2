@@ -1,11 +1,11 @@
 package Model.model.Facility;
 
 public class Facility {
-    public String id;
-    public String nameFacility;
-    public String areaFacility;
-    public String quantityPeople;
-    public String rentalType;
+    private String id;
+    private String nameFacility;
+    private String areaFacility;
+    private String quantityPeople;
+    private String rentalType;
 
 
     public String getId() {

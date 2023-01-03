@@ -1,7 +1,7 @@
 package Model.model.Facility;
 
 public class RoomFacility extends Facility{
-    public String freeService;
+    private String freeService;
 
     public RoomFacility( String nameFacility, String areaFacility, String quantityPeople, String rentalType,String id, String freeService) {
         super(id, nameFacility, areaFacility, quantityPeople, rentalType);
@@ -25,16 +25,13 @@ public class RoomFacility extends Facility{
 
     @Override
     public String toString() {
-        return "RoomFacility{" +
+        return "RoomFacility{" +super.toString()+'\''+
                 "freeService='" + freeService + '\'' +
-                ", nameFacility='" + nameFacility + '\'' +
-                ", areaFacility='" + areaFacility + '\'' +
-                ", quantityPeople=" + quantityPeople +
-                ", rentalType='" + rentalType + '\'' +
                 '}';
     }
+
     public String coverToCSV(){
         final String COMMA=",";
-        return super.coverToCSV()+COMMA+this.rentalType;
+        return super.coverToCSV()+COMMA+this.freeService;
     }
 }

@@ -12,13 +12,18 @@ public class FacilityMethod {
         Scanner scanner=new Scanner(System.in);
         FacilitySer facilitySer =new FacilitySer();
         StringFacility regexCode = new StringFacility();
-        int menu;
+        int menu = 0;
         do {
             System.out.println("1\tDisplay list facility");
             System.out.println("2\tAdd new facility");
             System.out.println("3\tEdit facility maintenance");
             System.out.println("4\tReturn main menu");
-            menu = Integer.parseInt(scanner.nextLine());
+            try{
+                menu = Integer.parseInt(scanner.nextLine());
+            }catch (NumberFormatException n){
+                n.printStackTrace();
+            }
+
             switch (menu) {
                 case 1:
                     facilitySer.list();

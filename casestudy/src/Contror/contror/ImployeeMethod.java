@@ -10,7 +10,7 @@ public class ImployeeMethod {
     public void imloyeeMethod(){
         Scanner scanner = new Scanner(System.in);
         EmployeeSer employeeSer = new EmployeeSer();
-        int menu;
+        int menu=0;
         do{
             System.out.println("1\tDisplay list employees");
             System.out.println("2\tAdd new employee");
@@ -18,7 +18,12 @@ public class ImployeeMethod {
             System.out.println("4\tEdit employee");
 
             System.out.println("5\tReturn main menu");
-            menu = Integer.parseInt(scanner.nextLine());
+            try{
+                menu = Integer.parseInt(scanner.nextLine());
+            }catch (NumberFormatException n){
+                n.printStackTrace();
+            }
+
             switch (menu) {
                 case 1:
                     employeeSer.list();
@@ -54,7 +59,12 @@ public class ImployeeMethod {
                     if (employee1 != null) {
                         employeeSer.delete(employee1);
                     } else {
-                        System.out.println("Không tìm thấy id");
+                        try {
+                            throw new ExceptionFormat("ExceptionFormat");
+                        } catch (ExceptionFormat e) {
+                            throw new RuntimeException(e);
+                        }
+
                     }
                     break;
                 case 4:

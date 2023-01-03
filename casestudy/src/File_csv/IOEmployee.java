@@ -11,7 +11,7 @@ public class IOEmployee {
 
     public static final String FILE_EMLOYEE = "D:\\Codegyme\\module\\casestudy\\src\\File_csv\\Employee.csv";
 
-    public static List<Employee> readEmloyee() {
+    public static List<Employee> readEmloyee() throws RuntimeException {
         List<Employee> customerList = new ArrayList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
