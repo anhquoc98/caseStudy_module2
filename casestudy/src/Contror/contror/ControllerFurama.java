@@ -6,7 +6,7 @@ public class ControllerFurama {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int select = 0;
-int menu;
+        int menu;
         do {
             System.out.println("1.\tEmployee.csv Management");
             System.out.println("2.\tCustomer Management");
@@ -17,23 +17,23 @@ int menu;
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
-                    ImployeeMethod imployeeMethod=new ImployeeMethod();
+                    ImployeeMethod imployeeMethod = new ImployeeMethod();
                     imployeeMethod.imloyeeMethod();
                     break;
                 case 2:
-                    CustomerMethod customerMethod=new CustomerMethod();
+                    CustomerMethod customerMethod = new CustomerMethod();
                     customerMethod.customerMethod();
                     break;
                 case 3:
-                   FacilityMethod facilityMethod =new FacilityMethod();
-                   facilityMethod.facilityMethod();
-                   break;
+                    FacilityMethod facilityMethod = new FacilityMethod();
+                    facilityMethod.facilityMethod();
+                    break;
                 case 4:
-                    BookingMethod bookingMethod=new BookingMethod();
+                    BookingMethod bookingMethod = new BookingMethod();
                     bookingMethod.bookingMethod();
                     break;
                 case 5:
-                    PromotionManagement promotionManagement=new PromotionManagement();
+                    PromotionManagement promotionManagement = new PromotionManagement();
                     promotionManagement.promotionMethod();
                     break;
 

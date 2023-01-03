@@ -63,7 +63,7 @@ public class Employee extends Person {
                 '}';
     }
     public String coverToCSV() {
-        String comma = ",";
-        return super.coverToCSV() + comma + this.idEmployee + comma + this.levelEmloyee + comma + this.position+comma+this.salary;
+        final String COMMA = ",";
+        return super.coverToCSV() + COMMA + this.idEmployee + COMMA + this.levelEmloyee + COMMA + this.position+COMMA+this.salary;
     }
 }

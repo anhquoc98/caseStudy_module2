@@ -80,7 +80,7 @@ public abstract class Person {
                 '}';
     }
     public String coverToCSV(){
-        String comma= ",";
-        return this.namePerson+comma+this.gender+comma+this.dateOfBirth+comma+this.numberCMND+comma+this.numberCMND+comma+this.email;
+        final String COMMA= ",";
+        return this.namePerson+COMMA+this.gender+COMMA+this.dateOfBirth+COMMA+this.numberCMND+COMMA+this.numberCMND+COMMA+this.email;
     }
 }
