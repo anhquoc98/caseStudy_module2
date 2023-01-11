@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2139fa24-8bcd-47ec-bf60-79aad1f69365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/contror.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/file/IOCongDan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/file/congdan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/modol/CongDan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/modol/repo/IRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/modol/repo/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/modol/ser/ISer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/modol/ser/Ser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanhmodule2/src/Giai_thuat/StringEpKieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhmodule2/src/Giai_thuat/StringEpKieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanhmodule2/src/Giai_thuat/StringTimKiem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhmodule2/src/Giai_thuat/StringTimKiem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanhmodule2/src/Mang_java/DaoNguocCacPhanTu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhmodule2/src/Mang_java/DaoNguocCacPhanTu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanhmodule2/src/Vong_Lap_java/LaiXuatNganHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhmodule2/src/Vong_Lap_java/LaiXuatNganHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanhmodule2/src/Vong_Lap_java/TimSoNguyenTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanhmodule2/src/Vong_Lap_java/TimSoNguyenTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/Contror/contror/ImployeeMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/Contror/contror/ImployeeMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/Model/Repo/CustomerRepo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/Model/Repo/CustomerRepo/CustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/Model/Repo/FacitilyRepo/RoomRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/Model/Repo/FacitilyRepo/RoomRepo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Jt880IJWAnQpXOkh4FOAfiPi8t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Codegyme/module/casestudy"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2139fa24-8bcd-47ec-bf60-79aad1f69365" name="Changes" comment="" />
+      <created>1672885859304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672885859304</updated>
+      <workItem from="1672885861379" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

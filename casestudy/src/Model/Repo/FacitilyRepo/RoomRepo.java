@@ -64,7 +64,7 @@ public class RoomRepo implements IRoomFacitilyRepo {
 
     @Override
     public void display() {
-        System.out.println("Mời bạn chọn dịch vụ ");
+        System.out.println("Mời bạn chọn dịch vụ để bảo trì: ");
         System.out.println("1.Room");
         System.out.println("2.Villa");
         int number = Integer.parseInt(scanner.nextLine());

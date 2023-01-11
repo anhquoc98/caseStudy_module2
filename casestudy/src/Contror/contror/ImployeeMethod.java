@@ -64,7 +64,6 @@ public class ImployeeMethod {
                         } catch (ExceptionFormat e) {
                             throw new RuntimeException(e);
                         }
-
                     }
                     break;
                 case 4:
