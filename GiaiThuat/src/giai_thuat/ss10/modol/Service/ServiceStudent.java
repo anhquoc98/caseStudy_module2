@@ -14,4 +14,21 @@ RepoStudent repoStudent=new RepoStudent();
     public void add(Student student) {
 repoStudent.add(student);
     }
+
+    @Override
+    public void delede(Student student) {
+        repoStudent.remove(student);
+    }
+
+    @Override
+    public void edit(Student student) {
+        repoStudent.edit(student);
+
+    }
+
+    @Override
+    public Student findById(String id) {
+
+        return repoStudent.byFindid(id);
+    }
 }
