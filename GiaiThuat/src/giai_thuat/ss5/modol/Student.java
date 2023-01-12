@@ -1,17 +1,17 @@
 package giai_thuat.ss5.modol;
 
-public class modol {
+public class Student {
     private String nameStudent;
     private String ageStudent;
     private  static String classStudent;
 
-    public modol(String nameStudent, String ageStudent, String classStudent) {
+    public Student(String nameStudent, String ageStudent, String classStudent) {
         this.nameStudent = nameStudent;
         this.ageStudent = ageStudent;
-        modol.classStudent = classStudent;
+        Student.classStudent = classStudent;
     }
 
-    public modol() {
+    public Student() {
     }
 
     public String getNameStudent() {
