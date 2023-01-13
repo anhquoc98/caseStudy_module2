@@ -2,6 +2,7 @@ package giai_thuat.ss10.Control;
 
 import giai_thuat.ss10.modol.Service.ServiceStudent;
 import giai_thuat.ss10.modol.Student;
+import sun.security.x509.UniqueIdentity;
 
 import java.util.Scanner;
 
@@ -29,7 +30,9 @@ public class ManagerStudent {
                     String name = scanner.nextLine();
                     System.out.println("Nhập giới tính");
                     String gender = scanner.nextLine();
-                    Student student = new Student(id, name, gender);
+                    System.out.println("Nhập điểm :");
+                    int point =Integer.parseInt(scanner.nextLine());
+                    Student student = new Student(id, name, gender,point);
                     serviceStudent.add(student);
                     break;
                 case 3:
@@ -82,6 +85,11 @@ public class ManagerStudent {
                                 System.out.println(student3);
                                 break;
                             case 2:
+                                System.out.println("Tìm kiếm theo tên");
+                                String seachName=scanner.nextLine();
+                                Student student4=serviceStudent.findByName(seachName);
+                                System.out.println(student4);
+                                break;
                         }
                     }while(choice<3);
                 case 6:

@@ -8,4 +8,5 @@ public interface IRepoStudent {
     Student byFindid(String id);
     void edit(Student student);
     void remove(Student student);
+    Student byFindName(String name);
 }
