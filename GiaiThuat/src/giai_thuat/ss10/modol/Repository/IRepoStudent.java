@@ -9,4 +9,5 @@ public interface IRepoStudent {
     void edit(Student student);
     void remove(Student student);
     Student byFindName(String name);
+//    Student sort(String name);
 }
