@@ -46,8 +46,8 @@ public class IOFile {
         FileWriter fileWriter;
         BufferedWriter bufferedWriter = null;
         try {
-            fileWriter =new FileWriter(FILE_PATH);
-            bufferedWriter =new BufferedWriter(fileWriter);
+            fileWriter =new FileWriter(FILE_PATH ,true);
+            bufferedWriter =new BufferedWriter(fileWriter );
             for (Student student:students){
                 bufferedWriter.write(student.toStringCSV());
                 bufferedWriter.newLine();

@@ -19,7 +19,6 @@ public class ControllerFurama {
                  e.printStackTrace();
             }
 
-            select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
                     ImployeeMethod imployeeMethod = new ImployeeMethod();

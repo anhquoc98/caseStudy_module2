@@ -3,9 +3,7 @@ package giai_thuat.ss10.modol.Repository;
 import giai_thuat.ss10.IOFile.IOFile;
 import giai_thuat.ss10.modol.Student;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class RepoStudent implements IRepoStudent {
     static List<Student> studentList = new ArrayList<>();
@@ -14,6 +12,7 @@ public class RepoStudent implements IRepoStudent {
         studentList.add(new Student("1", "Anh Quốc", "Nam",100));
         studentList.add(new Student("2", "Anh Quân", "Nam",99));
         studentList.add(new Student("3", "Anh Đào", "Nam",90));
+        studentList=IOFile.readFile();
     }
 
     @Override
@@ -69,8 +68,13 @@ public class RepoStudent implements IRepoStudent {
         return null;
     }
 
-//    @Override
-//    public Student sort(String name) {
-//        return Stu;
-//    }
+    @Override
+    public void sort() {
+        Collections.sort(studentList, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getPoint()- o2.getPoint();
+            }
+        });
+    }
 }

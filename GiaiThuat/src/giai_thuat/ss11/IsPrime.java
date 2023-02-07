@@ -25,12 +25,12 @@ public class IsPrime {
             n++;
         }
         for (Integer i:integerQueue){
-            System.out.print(i);
+            System.out.print(i);// cách 1
         }
         System.out.println("");
         System.out.println("");
         for (Integer i:integerList){
-            System.out.println(i);
+            System.out.println(i);// cách 2
         }
     }
 }

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="871a6aab-a90a-45c9-b125-bdbbb66b23c2" name="Changes" comment="" />
+    <list default="true" id="871a6aab-a90a-45c9-b125-bdbbb66b23c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BaiTapTet/src/bai1/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BaiTapTet/src/bai1/Repository/IRepositoryCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BaiTapTet/src/bai1/Repository/RepositoryCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/Control/ManagerStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/Control/ManagerStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/IOFile/IOStudent.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/IOFile/IOStudent.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/modol/Repository/RepoStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/modol/Repository/RepoStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/modol/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/out/production/GiaiThuat/giai_thuat/ss10/modol/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/Control/ManagerStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/Control/ManagerStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/IOFile/IOStudent.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/IOFile/IOStudent.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/modol/Repository/RepoStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/modol/Repository/RepoStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/modol/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss10/modol/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss11/IsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss11/IsPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss17/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GiaiThuat/src/giai_thuat/ss17/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lý Thuyết Module 2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Lý Thuyết Module 2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegyme/module2",
+    "last_opened_file_path": "D:/Codegyme/module/untitled1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -162,6 +178,7 @@
       <workItem from="1671508219726" duration="12313000" />
       <workItem from="1671592666309" duration="7673000" />
       <workItem from="1671627135084" duration="506000" />
+      <workItem from="1675653166765" duration="42000" />
     </task>
     <servers />
   </component>

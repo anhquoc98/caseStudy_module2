@@ -2,8 +2,6 @@ package giai_thuat.ss10.Control;
 
 import giai_thuat.ss10.modol.Service.ServiceStudent;
 import giai_thuat.ss10.modol.Student;
-import sun.security.x509.UniqueIdentity;
-
 import java.util.Scanner;
 
 public class ManagerStudent {
@@ -17,6 +15,7 @@ public class ManagerStudent {
             System.out.println("3.Xoá");
             System.out.println("4.Chỉnh sửa");
             System.out.println("5.Tìm kiếm theo id");
+            System.out.println("6. Sắp xếp theo số");
             System.out.print("Mời bạn nhập số");
             menu = Integer.parseInt(scanner.nextLine());
             switch (menu) {
@@ -93,7 +92,8 @@ public class ManagerStudent {
                         }
                     }while(choice<3);
                 case 6:
+                    serviceStudent.sort();
             }
-        } while (menu < 6);
+        } while (menu < 7);
     }
 }

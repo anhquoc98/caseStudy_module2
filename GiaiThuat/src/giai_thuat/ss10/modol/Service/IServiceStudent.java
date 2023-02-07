@@ -9,4 +9,5 @@ public interface IServiceStudent {
     void edit(Student student);
     Student findById(String id);
     Student findByName(String name);
+    void sort();
 }

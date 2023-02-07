@@ -39,4 +39,10 @@ public class ServiceStudent implements IServiceStudent {
     public Student findByName(String name) {
         return repoStudent.byFindName(name);
     }
+
+    @Override
+    public void sort() {
+        repoStudent.sort();
+    }
+
 }

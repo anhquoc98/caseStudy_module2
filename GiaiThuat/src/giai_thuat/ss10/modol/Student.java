@@ -1,6 +1,8 @@
 package giai_thuat.ss10.modol;
 
-public class Student {
+import java.util.Comparator;
+
+public class Student  {
     private String idStudent;
     private String nameStudent;
     private String Gender;
@@ -57,8 +59,10 @@ public class Student {
                 ", point=" + point +
                 '}';
     }
-    public String toStringCSV(){
-        final String COMMA=",";
-        return this.idStudent+COMMA+this.nameStudent+COMMA+this.Gender+COMMA+this.point;
+
+    public String toStringCSV() {
+        final String COMMA = ",";
+        return this.idStudent + COMMA + this.nameStudent + COMMA + this.Gender + COMMA + this.point;
     }
+
 }
